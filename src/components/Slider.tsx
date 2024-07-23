@@ -13,7 +13,8 @@ const slides = [
     description: "Sale! Up to 50% off!",
     img: "https://images.pexels.com/photos/276566/pexels-photo-276566.jpeg?auto=compress&cs=tinysrgb&w=800 ",
     url: "/",
-    bg: "bg-gradient-to-r from-yellow-50 to-pink-50",
+    
+   bg: "bg-gradient-to-r from-yellow-50 to-pink-50",
     text: "Premium Hotel Supplies Sale"
 
   },
