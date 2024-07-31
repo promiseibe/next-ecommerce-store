@@ -3,16 +3,20 @@ import React from 'react'
 import Menu from './Menu'
 import Image from 'next/image'
 import SearchBar from './SearchBar'
-import NavbarIcons from './NavbarIcons'
+
+import dynamic from 'next/dynamic'
 
 function Navbar() {
+
+  const NavbarIcons = dynamic(() => import("./NavbarIcons"), {ssr:false})
+  
   return (
     <div className=' h-20 px-4 md:px-8   lg:px-16 xl:32  relative '>
       {/* MOBILE */}
       <div className=' h-full flex justify-between md:hidden items-center '>
     <Link href="/">
-    <div className=' text-xl tracking-wide font-bold'>
-             Basic Hotels
+    <div className=' text-lg tracking-wide font-bold'>
+             Basic Hotel Services
     </div>
  
       </Link>
@@ -26,7 +30,7 @@ function Navbar() {
         <Link href="/" className=' flex items-center gap-3'>
         <Image src="/logo.png" alt="" width={24} height={24} />
         <div>
-          <p className=' text-xl tracking-wide font-bold'>Basic hotels</p>
+          <p className=' text-lg tracking-wide font-bold'>Basic Hotel Services</p>
           
     </div>
         </Link>

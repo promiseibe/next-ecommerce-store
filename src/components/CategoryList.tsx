@@ -1,3 +1,5 @@
+
+
 import { wixClientServer } from "@/app/lib/wixContex";
 import { collections } from "@wix/stores";
 import Image from "next/image";
@@ -13,6 +15,7 @@ async function CategoryList() {
       <div className=" flex gap-4 md:gap-8">
         {cat.items.map((item) => (
           <Link
+          key={item._id}
             href={`/list?cat=${item.slug}`}
             className=" shadow-lg p-2 flex-shrink-0 w-9/12 sm:w-1/2 lg:w-1/4 xl:w-1/6"
           >

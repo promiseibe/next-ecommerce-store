@@ -55,7 +55,7 @@ async function SinglePage({params}:{params:{slug: string}}) {
       <div className="h-[2px] bg-gray-100"/>
         {product.additionalInfoSections?.map((section:any)=> (
     
-    <div className=" text-sm" key={section.title}>
+    <div className=" text-sm" key={section._id}>
       <h4 className="font-medium mb-4">
         {section.title}
       </h4>
